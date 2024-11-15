@@ -1,16 +1,14 @@
 version: '3'
 
-includes:
-  client:
-    taskfile: ./client/Taskfile.yml
-    dir: ./client
-
 tasks:
   run-dev:
-    dir: client
     cmds:
       - bun run dev
+  install-deps:
+    cmds:
+      - bun install
   build-client:
-    dir: client
+    deps:
+      - install-deps
     cmds:
       - bun run build
