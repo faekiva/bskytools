@@ -1,5 +1,7 @@
 version: '3'
 
-task:
+tasks:
   run-dev:
-    
+    dir: client
+    cmds:
+      - bun run dev
