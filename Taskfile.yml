@@ -5,3 +5,7 @@ tasks:
     dir: client
     cmds:
       - bun run dev
+  build-client:
+    dir: client
+    cmds:
+      - bun run build
