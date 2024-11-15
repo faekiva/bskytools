@@ -4,3 +4,5 @@ services:
     runtime: static
     staticPublishPath: ./client/dist
     buildCommand: sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d && ./bin/task client:build-client
+    domains:
+      - bskybox.leftist.gay
